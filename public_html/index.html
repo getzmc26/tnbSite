@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<style type "text/css">
+		a:link              {color: white; text-decoration: none;}
+		a:visited           {color: white; text-decoration: none;}
+		a:hover             {color: #555555; text-decoration: none;}
+		a:active            {color: white; text-decoration: none;}	
+		body                {background-color: #333333; width: 100%; height: 100%;} 
+		#container          {background-color: #333333; margin:-18px;}
+		header              {float: left;}
+		#space1		        {float: left; margin-top: -5px; width: 100%; height: 8px; background-color: black;}
+		#navbanner          {float: left; margin-top: -5px; width: 100%; height: 53px; background-color: #cc8b15;}
+		nav                 {text-align: center; word-spacing: 80px; font-family: Arial, serif; color: white; font-weight: bold;}
+		#space2		        {float: left; width: 100%; height: 3px; background-color: black;}
+		#section2           {float: left; background-color: #333333; padding-left: 150px; word-spacing: 10px; }
+		article             {float: left; background-color: #333333; padding-left: 150px; word-spacing: 10px; }
+		#space3	            {float: left; width: 100%; height: 3px; background-color: black;}		
+		#space4		        {float: left; width: 100%; height: 30px; background-color: #cc8b15;}
+		#space5	            {float: left; width: 100%; height: 3px; background-color: black;}
+		section             {display: inline-block; width: 655px; padding-left: 70px; padding-right: 100px; background-color: #333333; text-align: center; font-family: Arial, serif; color: white; line-height: 30px}
+		small               {font-size: 20px;}
+		footer			    {text-align: center; background-color: #333333; font-size: 12px; color: white;}
+		#space6	            {float: left; width: 100%; height: 100px; background-color: #333333;}
+		h1					{font-size: 25px;}
+	</style>
+	
+    <title>
+	TNB | Home
+    </title>
+  </head>
+
+  <body onload="myFunction()">
+	<script>
+	function tempAlert(msg,duration) {
+		var el = document.createElement("div");
+		el.setAttribute("style","position:absolute;top:40%;left:20%;background-color:white;");
+		el.innerHTML = msg;
+		setTimeout(function(){
+			el.parentNode.removeChild(el);
+		},duration);
+		document.body.appendChild(el);
+	}
+	
+	function myFunction() {
+    var DOB = prompt("Please enter your year of birth", "19--");
+    
+		if (DOB > "1995") {
+			window.location = 'p2redirect.html';
+		}
+		else {
+			alert("Enjoy our site!")
+		}
+	}
+	</script>
+	<div id="container">
+		<header>
+			<img style="width: 100%;" src="banner.jpg" alt="TuesdayNightBrewing" onmouseover="this.src='bannerblackwhite.jpg';" onmouseout="this.src='banner.jpg';" usemap="bannermap"/>
+			<map name="bannermap">
+				<area shape="rect" coords="23,33,702,88" target="_blank" href="index.html" alt="TuesdayNightBrewing Homepage" title="TuesdayNightBrewing"/>
+			</map>
+		</header>
+		<div id="space1">
+		</div>
+		<div id="navbanner">
+		<br/>		
+			<nav>
+				<a href="http://www.matthewgetz.comlu.com/index.html">HOME</a>
+				<a href="http://www.matthewgetz.comlu.com/p2about.html">ABOUT</a> 				
+				<a href="http://www.matthewgetz.comlu.com/p2beer.html">BEER</a> 
+				<a href="http://www.matthewgetz.comlu.com/p2process.html">PROCESS</a> 
+				<a href="http://www.matthewgetz.comlu.com/p2merch.html">MERCH</a> 
+				<a href="http://www.matthewgetz.comlu.com/p2contact.html">CONTACT</a>
+			</nav>
+		</div>
+		<div id="space2">
+		</div>
+		<div id="section1"> 
+			<img src="breweryinside1.jpg" alt="Welcome Message" width="100%" height="100%" align="left"> 
+		</div>
+		<div id="space3">
+		</div>
+		<div id="space4">
+		</div>
+		<div id="space5">
+		</div>
+		<article>
+			<p>
+			<br/>
+			<br/>
+			<br/>
+			</p>
+			<img src="beer1.jpg" alt="Picture of beer" width="150px" height="400px">
+			<img src="beer4.jpg" alt="Picture of beer" width="150px" height="400px">
+			<img src="beer2.jpg" alt="Picture of beer" width="150px" height="400px">
+			<img src="beer3.jpg" alt="Picture of beer" width="150px" height="400px">
+			<p>
+			<br/>
+			</p>
+		</article>
+		<section>
+			<h1>
+			What's New?
+			</h1>
+			<hr/>
+			<p>
+			Our newest seasonals include (from left to right) our Vanilla Chocolate Porter, Crisp Seasonal Cider, Red Ale, and Milk Stout. Stop by or pick them up from your local carrier of <em>TuesdayNightBrewing</em> beer!
+			<br/>
+			<br/>
+			<br/>
+			<img src="logo.jpg" alt="TuesdayNightBrewing Logo" width="350px" height="200px">
+			<br/>
+			<br/>
+			<br/>
+			<small>More seasonals are coming soon!</small>
+			</p>
+		</section>
+		<div id="space3">
+		</div>
+		<div id="space4">
+		</div>
+		<div id="space5">
+		</div>
+		<div id="space6">
+		</div>
+		<footer>
+			<p>
+			© 2016 Matthew Getz (TuesdayNightBrewing is a fake business)
+			</p>
+		</footer>
+	</div>
+  </body>
+</html>
